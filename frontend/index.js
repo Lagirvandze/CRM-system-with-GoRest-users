@@ -396,7 +396,7 @@
         let contacts = [];
         for (let i = 0; i < arrayNameContact.length; i++) {
           if (arrayNameContact[i].innerHTML == 'Телефон') {
-            // imtel.mask(arrayValueContact[i]);
+            
             val
               .addField(arrayValueContact[i], [
                 {
