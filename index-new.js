@@ -1,25 +1,7 @@
 (() => {
     const SERVER_URL = 'https://gorest.co.in/public/v2';
     const URL_PREFIX = '/users';
-    // clientsList = [
-    //     {
-    //     id:1217937,
-    //     name:"Ms. Jagathi Malik",
-    //     email:"malik_jagathi_ms@steuber-kunde.example",
-    //     gender:"female",
-    //     status:"active"
-    //     },
-    //     {id:1217936,
-    //     name:"Datta Acharya",
-    //     email:"datta_acharya@cole-lockman.example",
-    //     gender:"male",
-    //     status:"inactive"
-    //     },
-    //     {id:1217935,
-    //     name:"Rev. Madhuri Chattopadhyay",
-    //     email:"chattopadhyay_rev_madhuri@reichel-barrows.test",
-    //     gender:"female",
-    //     status:"inactive"}];
+    
 
     const validateSuccessClass = 'just-validate-success-field';
     const validationErrorClass = 'just-validate-error-field';
@@ -88,125 +70,7 @@
 
         //   // форма создания и изменения клиента
         //   const formClient = document.createElement('form'),
-        //       divHeaderFormClient = document.createElement('div'),
-        //       headerFormClient = document.createElement('h2'),
-        //       spanFormClient = document.createElement('span'),
-        //       divInputFormClient = document.createElement('div'),
-        //       labelNameFormClient = document.createElement('label'),
-        //       labelEmailFormClient = document.createElement('label'),
-        //       inputNameFormClient = document.createElement('input'),
-        //       inputEmailFormClient = document.createElement('input'),
-        //       placeholderNameFormClient = document.createElement('div'),
-        //       spanNameFormClient = document.createElement('span'),
-        //       spanEmailFormClient = document.createElement('span'),
-        //       placeholderEmailFormClient = document.createElement('div'),
-        //       // selectGenderFormClient = document.createElement('select'),
-        //       // option0GenderFormClient = document.createElement('option'),
-        //       // option1GenderFormClient = document.createElement('option'),
-        //       // option2GenderFormClient = document.createElement('option'),
-        //       // selectStatusFormClient = document.createElement('select'),
-        //       // option0StatusFormClient = document.createElement('option'),
-        //       // option1StatusFormClient = document.createElement('option'),
-        //       // option2StatusFormClient = document.createElement('option'),
-        //       btnSaveFormClient = document.createElement('button'),
-        //       btnDeleteFormClient = document.createElement('button'),
-        //       btnCloseFormClient = document.createElement('button'),
-        //       btnCancelFormClient = document.createElement('button'),
-        //       spinnerBtnSave = document.createElement('span'),
-        //       formError = document.createElement('div');
-          
-         
-        //   formClient.classList.add('form', 'form-update', 'flex');
-        //   formClient.setAttribute('id', 'formClient');
-        //   divHeaderFormClient.classList.add('form__container-title', 'flex');
-        //   headerFormClient.classList.add('form__title');
-        //   spanFormClient.classList.add('form__title-id');
-        //   spanFormClient.setAttribute('id', 'formTitleId');
-        //   divInputFormClient.classList.add('form__container-input');
-        //   labelNameFormClient.classList.add('form__placeinput');
-        //   labelEmailFormClient.classList.add('form__placeinput');
-        //   inputNameFormClient.classList.add('form__input');
-        //   inputNameFormClient.setAttribute('type', 'text');
-        //   inputNameFormClient.setAttribute('id', 'inputName');
-        //   inputEmailFormClient.classList.add('form__input');
-        //   inputEmailFormClient.setAttribute('type', 'email');
-        //   inputEmailFormClient.setAttribute('id', 'inputEmail');
-        //   placeholderNameFormClient.classList.add('form__place-holder');
-        //   placeholderNameFormClient.textContent = 'Имя';
-        //   spanNameFormClient.textContent = '*';
-        //   placeholderEmailFormClient.classList.add('form__place-holder');
-        //   placeholderEmailFormClient.textContent = 'Email';
-        //   spanEmailFormClient.textContent = '*';
-          
-        //   btnSaveFormClient.classList.add('btn', 'mybtn', 'form__btn-purple', 'flex');
-        //   btnSaveFormClient.setAttribute('type', 'submit');
-        //   btnSaveFormClient.setAttribute('id', 'btn-submit-formUpdate');
-        //   formError.classList.add('form__error');
-          
-        //   btnSaveFormClient.textContent = 'Сохранить';
-        //   spinnerBtnSave.classList.add('spinner-border', 'spinner-border-sm', 'spinner-border-btn-purple');
-          
-        //   btnDeleteFormClient.classList.add('form__btn-cancel-delete', 'form__btn-delete');
-        //   btnDeleteFormClient.setAttribute('id', 'btnDeleteFormClient');
-        //   btnDeleteFormClient.setAttribute('type', 'button');
-        //   btnDeleteFormClient.textContent = 'Удалить клиента';
-        //   btnCancelFormClient.classList.add('form__btn-cancel-delete', 'form__btn-cancel');
-        //   btnCancelFormClient.setAttribute('type', 'button');
-        //   btnCancelFormClient.textContent = 'Отмена';
-        //   btnCloseFormClient.classList.add('btn-close', 'btn-close-form');
-        //   btnCloseFormClient.setAttribute('aria-label', 'Close');
-        //   btnCloseFormClient.setAttribute('type', 'button');
-        //   btnCloseFormClient.setAttribute('id', 'btn-close-formUpdate');
-
-        //   $containerClients.append(formClient);
-
-        //   divHeaderFormClient.append(headerFormClient, spanFormClient);
-        //   // selectGenderFormClient.append( option0GenderFormClient, option1GenderFormClient, option2GenderFormClient);
-        //   // selectStatusFormClient.append(option0StatusFormClient, option1StatusFormClient, option2StatusFormClient);
-        //   divInputFormClient.append(labelNameFormClient, labelEmailFormClient);
-        // //   labelLastnameFormClient.append(inputLastnameFormClient, placeholderLastnameFormClient);
-        //   labelNameFormClient.append(inputNameFormClient, placeholderNameFormClient);
-        //   // option2GenderFormClient.setAttribute('selected', 'true');
-        // //   labelSurnameFormClient.append(inputSurnameFormClient, placeholderSurnameFormClient);
-        //   labelEmailFormClient.append(inputEmailFormClient, placeholderEmailFormClient);
-        //   formClient.append(divHeaderFormClient, divInputFormClient);
-        //   formClient.append(formError, btnSaveFormClient);
-        //   btnSaveFormClient.prepend(spinnerBtnSave);
-          
-        //   formClient.append(btnDeleteFormClient, btnCancelFormClient, btnCloseFormClient);
-          
-         
-        //   const validator1 = new window.JustValidate('#formClient');
-
-        //   placeholderNameFormClient.append(spanNameFormClient);
-        // //   placeholderSurnameFormClient.append(spanSurnameFormClient);
-        //   placeholderEmailFormClient.append(spanEmailFormClient);
-        //   formClient.style.setProperty('--top-form', '19.9%');
-        //   $modalWindow.style.display = '';
-
-        //         // валидация на инпуты ФИО
-        //         validator1
-        //         .addField(inputNameFormClient, [
-        //         {
-        //             rule: 'required',
-        //             errorMessage: 'Введите имя',
-        //         },
-        //         {
-        //             rule: 'customRegexp',
-        //             value: /^[A-ZА-ЯЁ\-.\s]+$/i,
-        //             errorMessage: 'Введите корректное имя',
-        //         },
-        //         ])
-        //         .addField(inputEmailFormClient, [
-        //         {
-        //             rule: 'required',
-        //             errorMessage: 'Заполните email',
-        //         }, 
-        //         {
-        //             rule: 'email',
-        //             errorMessage: 'Введите корректный email',
-        //         }
-        //         ]);
+        
                 
         const parametrsTippy = {
                 content: '',
