@@ -9,7 +9,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!-- <link rel="stylesheet" href="./css/normalize.css"> -->
     <link rel="stylesheet" href="./libs/choices.min.css">
-    
+    <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/style.css">
     <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
@@ -20,75 +20,12 @@
     <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
     <script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
     
-    <script defer src="index.js"></script>
+    <script defer src="index-new.js"></script>
 </head>
 <body>
     <div class="modalBackground" id="modalWindow"> </div>
-    <div class="container container-form" id="container-form">
-        
-
-        <!-- <form action="#" class="form form-delete flex" id="formDeleteClient">
-            <h2 class="form__title form-delete__title">
-                Удалить клиента
-            </h2>
-            <div class="form-delete__descr">
-                Вы действительно хотите удалить данного клиента?
-            </div>
-            <button class="mybtn form__btn-purple" type="button" id="btnDeleteFormDeleteClient">
-                Удалить
-            </button>
-            <button class="form__btn-cancel-delete form-delete__btn-cancel" id="btnCancelFormDeleteClient">
-                Отмена
-            </button>
-            <button type="button" class="btn-close form-delete__btn-close" aria-label="Close" id="btnCloseFormDeleteClient"></button>
-        </form> -->
-    </div>
     <div class="container " id="clients">
-        <form action="#" class="form form-client flex" id="formClient">
-            <div class="form__container-title flex">
-                <h2 class="form__title form__title-new is-active">
-                    Новый клиент
-                </h2>
-                <!-- <h2 class="form__title form__title-update">
-                    Изменить данные
-                </h2>
-                <span class="form__title-id" id="formTitleId"></span> -->
-            </div>
-            <div class="form__container-input">
-                <label class="form__placeinput">
-                    <input type="text" class="form__input" id="inputSurname">
-                    <div class="form__place-holder" id="placeholderInputSurname">Фамилия<span>*</span></div>
-                </label>
-                <label class="form__placeinput">
-                    <input type="text" class="form__input" id="inputName">
-                    <div class="form__place-holder" id="placeholderInputName">Имя<span>*</span></div>
-                </label>
-                <label class="form__placeinput">
-                    <input type="text" class="form__input" id="inputLastame">
-                    <div class="form__place-holder" id="placeholderInputLastname">Отчество</div>
-                </label>
-                    
-            </div>
-            <div class="flex form__contacts" id="div-contacts-1">
-                <div class="flex form__contacts-group" id="div-contacts"></div>
-                <button class="flex form__contacts-btn" id="btn-add-contact" type="button">
-                    Добавить контакт
-                </button>
-            </div>
-            <button class="mybtn form__btn-purple" type="submit" id="btn-submit-formClien">
-                <svg id="spinnerFormCreate" class="spinner form__spinner" viewBox="0 0 50 50">
-                    <circle class="spinner__path form__spinner-path" cx="25" cy="25" r="20" fill="none" stroke-width="5"></circle>
-                </svg>
-                Сохранить
-            </button>
-            <button class="form__btn-cancel-delete form__btn-cancel is-active" id="btnCancelFormClient">
-                Отмена
-            </button>
-            <!-- <button class="form__btn-cancel-delete form__btn-delete" id="btnDeleteFormUpdateClient">
-                Удалить клиента
-            </button> -->
-            <button type="button" class="btn-close btn-close-form" aria-label="Close" id="btn-close-formClient"></button>
-        </form>
+
         <div class="header__container">
             <div class="container-content">
             <div class="header flex">
@@ -102,7 +39,7 @@
                         <path d="M17.2617 29.082C17.2617 30.0898 16.9102 30.8574 16.207 31.3848C15.5098 31.9121 14.4639 32.1758 13.0693 32.1758C12.3545 32.1758 11.7451 32.126 11.2412 32.0264C10.7373 31.9326 10.2656 31.792 9.82617 31.6045V29.3896C10.3242 29.624 10.8838 29.8203 11.5049 29.9785C12.1318 30.1367 12.6826 30.2158 13.1572 30.2158C14.1299 30.2158 14.6162 29.9346 14.6162 29.3721C14.6162 29.1611 14.5518 28.9912 14.4229 28.8623C14.2939 28.7275 14.0713 28.5781 13.7549 28.4141C13.4385 28.2441 13.0166 28.0479 12.4893 27.8252C11.7334 27.5088 11.1768 27.2158 10.8193 26.9463C10.4678 26.6768 10.21 26.3691 10.0459 26.0234C9.8877 25.6719 9.80859 25.2412 9.80859 24.7314C9.80859 23.8584 10.1455 23.1846 10.8193 22.71C11.499 22.2295 12.46 21.9893 13.7021 21.9893C14.8857 21.9893 16.0371 22.2471 17.1562 22.7627L16.3477 24.6963C15.8555 24.4854 15.3955 24.3125 14.9678 24.1777C14.54 24.043 14.1035 23.9756 13.6582 23.9756C12.8672 23.9756 12.4717 24.1895 12.4717 24.6172C12.4717 24.8574 12.5977 25.0654 12.8496 25.2412C13.1074 25.417 13.667 25.6777 14.5283 26.0234C15.2959 26.334 15.8584 26.624 16.2158 26.8936C16.5732 27.1631 16.8369 27.4736 17.0068 27.8252C17.1768 28.1768 17.2617 28.5957 17.2617 29.082ZM21.9287 26.6562L23.0977 25.1621L25.8486 22.1738H28.8721L24.9697 26.4365L29.1094 32H26.0156L23.1855 28.0186L22.0342 28.9414V32H19.3535V18.3242H22.0342V24.4238L21.8936 26.6562H21.9287ZM35.9824 21.9893C37.1426 21.9893 38.0508 22.4434 38.707 23.3516C39.3633 24.2539 39.6914 25.4932 39.6914 27.0693C39.6914 28.6924 39.3516 29.9492 38.6719 30.8398C37.998 31.7305 37.0781 32.1758 35.9121 32.1758C34.7578 32.1758 33.8525 31.7568 33.1963 30.9189H33.0117L32.5635 32H30.5156V18.3242H33.1963V21.5059C33.1963 21.9102 33.1611 22.5576 33.0908 23.4482H33.1963C33.8232 22.4756 34.752 21.9893 35.9824 21.9893ZM35.1211 24.1338C34.459 24.1338 33.9756 24.3389 33.6709 24.749C33.3662 25.1533 33.208 25.8242 33.1963 26.7617V27.0518C33.1963 28.1064 33.3516 28.8623 33.6621 29.3193C33.9785 29.7764 34.4766 30.0049 35.1562 30.0049C35.707 30.0049 36.1436 29.7529 36.4658 29.249C36.7939 28.7393 36.958 28.001 36.958 27.0342C36.958 26.0674 36.7939 25.3438 36.4658 24.8633C36.1377 24.377 35.6895 24.1338 35.1211 24.1338ZM41.5283 30.7432C41.5283 30.251 41.6602 29.8789 41.9238 29.627C42.1875 29.375 42.5713 29.249 43.0752 29.249C43.5615 29.249 43.9365 29.3779 44.2002 29.6357C44.4697 29.8936 44.6045 30.2627 44.6045 30.7432C44.6045 31.2061 44.4697 31.5723 44.2002 31.8418C43.9307 32.1055 43.5557 32.2373 43.0752 32.2373C42.583 32.2373 42.2021 32.1084 41.9326 31.8506C41.6631 31.5869 41.5283 31.2178 41.5283 30.7432Z" fill="white"/>
                     </svg>
                 </button>
-                <input class="header__search" type="text" placeholder="Введите запрос" id="search"> 
+                <input class="header__search" type="text" placeholder="Введите запрос (id/имя)" id="search"> 
                 <button type="button" class="btn-close btn-close-search" aria-label="Close" id="btn-close-search"></button>
             </div>
         </div>
@@ -112,8 +49,8 @@
             <div class="clients" >
                
                <h1 class="clients__title">Клиенты</h1> 
-               <table class="table clients__header-table" id="table" cellpadding="100">
-                <thead class="table__head">
+               <table class="table clients__header-table" id="table" cellpadding="19px">
+                <thead class="table__head sticky">
                     <tr>
                         <th class="table__header table__header-id table__header-col-first" id="table-header-id">
                             <button class="table__btn table__btn-id" id="table-btn-id">
@@ -136,7 +73,7 @@
                         </th>
                         <th class="table__header table__header-createDate" id="table-header-createDate">
                             <button class="table__btn" id="table-btn-createDate">
-                                Дата и время создания
+                                Пол
                                 <svg class="table-btn-arrow" id="table-btn-arrow-createDate" width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M8 4L7.295 3.295L4.5 6.085L4.5 0L3.5 0L3.5 6.085L0.71 3.29L0 4L4 8L8 4Z" fill="#B89EFF"/>
                                     </svg>
@@ -144,8 +81,7 @@
                         </th>
                         <th class="table__header table__header-lastCor" id="table-header-lastCor">
                             <button class="table__btn" id="table-btn-updateDate">
-                                Последние изменения
-                                <svg class="table-btn-arrow" id="table-btn-arrow-updateDate" width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                Статус                                <svg class="table-btn-arrow" id="table-btn-arrow-updateDate" width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M8 4L7.295 3.295L4.5 6.085L4.5 0L3.5 0L3.5 6.085L0.71 3.29L0 4L4 8L8 4Z" fill="#B89EFF"/>
                                     </svg>
                             </button>
@@ -162,14 +98,14 @@
                         </th>
                     </tr>
                 </thead>
+                <tbody id="tbody" class="container-tbody">
+                    <div id="spinner-table-body" class="spinner-border spinner-border-table" role="status">
+                        <span class="visually-hidden">Загрузка...</span>
+                    </div>
+                </tbody>
                 </table>
-                <div id="tbody" class="container-tbody"> 
-                    <svg id="spinnerTBody" class="spinner container-tbody_spinner" viewBox="0 0 50 50">
-                        <circle class="spinner__path container-tbody_spinner-path" cx="25" cy="25" r="20" fill="none" stroke-width="5"></circle>
-                    </svg>
-                    <table class="table__main-body" cellpadding="18px">
-                        <tbody class="table__body"></tbody>
-                    </table>
+                <div class="error">
+                    
                 </div>
                 <button class="mybtn clients__btn flex" id="btn-add-client">
                     <svg class="clients__btn-svg" width="23" height="16" viewBox="0 0 23 16" fill="none" xmlns="http://www.w3.org/2000/svg">
