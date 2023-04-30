@@ -273,7 +273,7 @@
               headers: {
                 'Content-Type': 'application/json', 
                 'Accept': 'application/json', 
-                'Authorization': 'Bearer 3c6796e6a714a2eaa32c29988388ab58a1b238864107f300e4f3eb44c856af42',
+                'Authorization': 'Bearer ',
             }
             });
             // (await response).json().then(function(value) {return value.message});
@@ -300,7 +300,7 @@
                 headers: {
                   'Content-Type': 'application/json', 
                   'Accept': 'application/json', 
-                  'Authorization': 'Bearer 3c6796e6a714a2eaa32c29988388ab58a1b238864107f300e4f3eb44c856af42',
+                  'Authorization': 'Bearer ',
                 }
               });
             const infClient = await response.json();
@@ -344,7 +344,7 @@
             headers: {
               'Content-type': 'application/json',
               'Accept': 'application/json',
-              'Authorization': 'Bearer 3c6796e6a714a2eaa32c29988388ab58a1b238864107f300e4f3eb44c856af42',
+              'Authorization': 'Bearer ',
             }
             });
           const clients = await response.json();
@@ -376,7 +376,7 @@
                 headers: {
                     'Content-type': 'application/json',
                     'Accept': 'application/json',
-                    'Authorization': 'Bearer 3c6796e6a714a2eaa32c29988388ab58a1b238864107f300e4f3eb44c856af42',
+                    'Authorization': 'Bearer ',
                 }
             });
             // console.log(clientsList);
